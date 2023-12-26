@@ -7,7 +7,7 @@ import java.util.Map;
 public class FrequencyReader {
     // This method takes a file name and returns a Map structure that shows
     // how many times each character appears in the file.
-    public static Map<String, Integer> readFrequencies(String fileName) throws IOException {
+    public static Map<String, Integer> calculateFruquencies(String fileName) throws IOException {
 
         // Map to stores the frequencies of characters
         Map<String, Integer> frequencies = new HashMap<>();
