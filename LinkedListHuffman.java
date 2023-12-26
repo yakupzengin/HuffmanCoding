@@ -31,7 +31,7 @@ class LinkedListHuffman {
     public void display(){
         Node<HuffmanNode> iterator = head;
         while(iterator !=null){
-            System.out.println("Values: " + iterator.node.value+ " & " +"frequency: " + iterator.node.frequency+ " ");
+            System.out.println("-> Values: " + iterator.node.value+ " & " +"frequency: " + iterator.node.frequency+ " ");
             iterator = iterator.next;
         }
         System.out.println();
