@@ -22,3 +22,8 @@ The project consists of the following Java classes:
 7. **Test:** Demonstrates the usage of the implemented classes by encoding and decoding a sample text file.
 
 8. **Node:** Generic linked list node used in the LinkedListHuffman class.
+
+![huffman-sch2](https://github.com/yakupzengin/HuffmanCoding/assets/118113891/f09cd140-f494-4cb6-8314-1e1b7a3347d7)
+![createHuffmanTree](https://github.com/yakupzengin/HuffmanCoding/assets/118113891/d283ed73-e9ba-462c-ac9f-16b04b6556b3)
+
+
