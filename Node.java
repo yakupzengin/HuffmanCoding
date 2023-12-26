@@ -6,4 +6,7 @@ public class Node<T> {
         this.node=node;
         this.next=null;
     }
+    public String toString(){
+        return String.valueOf(node);
+    }
 }
