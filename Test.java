@@ -24,7 +24,7 @@ public class Test {
             Map<String, String> huffmanCodes = huffmanTree.getHuffmanCodes(root, "");
             for (String key : huffmanCodes.keySet()) {
                 String value = huffmanCodes.get(key);
-                System.out.println(key + ": " + value);
+                System.out.println(key + " : " + value);
             }
 
 
