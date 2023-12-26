@@ -39,17 +39,17 @@ class HuffmanTree {
 
 
     // Helper method to recursively generate Huffman codes for each leaf node.
-    private void generateCodes(HuffmanNode node, String code, Map<String, String> huffmanCodes) {
-        if (node != null) {
+    private void generateCodes(HuffmanNode root, String code,  Map<String, String> huffmanCodes) {
+        if (root != null) {
 
             // If the node is a leaf node, add its value and corresponding code to the map.
-            if (node.left == null && node.right == null) {
-                huffmanCodes.put(node.value, code);
+            if (root.left == null && root.right == null) {
+                huffmanCodes.put(root.value, code);
             }
 
             // Recursively generate codes for the left and right subtrees.
-            generateCodes(node.left, code + "0", huffmanCodes);
-            generateCodes(node.right, code + "1", huffmanCodes);
+            generateCodes(root.left, code + "0", huffmanCodes);
+            generateCodes(root.right, code + "1", huffmanCodes);
         }
     }
 }
