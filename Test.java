@@ -11,6 +11,7 @@ public class Test {
             for (String key : frequencies.keySet()) {
                 linkedList.insertSorted(new HuffmanNode(key, frequencies.get(key)));
             }
+        System.out.println(frequencies);
             // Displays the characters and their frequencies in the linked list
             System.out.println("Character and their frequiencies");
             linkedList.display();
