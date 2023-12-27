@@ -10,13 +10,13 @@ public class HuffmanEncoder {
         BufferedWriter writer = new BufferedWriter(new FileWriter(encodedFileName));
         BufferedReader readerCodes = new BufferedReader(new FileReader(encodedFileName));
 
-        int ch;
+        int value;
 
         // Reads each character from the source file
-        while ((ch = reader.read()) != -1) {
+        while ((value = reader.read()) != -1) {
 
             // Converts the character to a string.
-            String character = String.valueOf((char) ch);
+            String character = String.valueOf((char) value);
             String code = huffmanCodes.get(character);
 
             // Writes the Huffman code to the encoded file.
@@ -26,11 +26,11 @@ public class HuffmanEncoder {
 
 
         System.out.print("Encoded : ");
-        int ch2;
-        while ((ch2 = readerCodes.read()) != -1) {
+        int value2;
+        while ((value2 = readerCodes.read()) != -1) {
 
             // Converts the character to a string.
-            String code = String.valueOf((char) ch2);
+            String code = String.valueOf((char) value2);
             System.out.print(code);
         }
         System.out.println();
